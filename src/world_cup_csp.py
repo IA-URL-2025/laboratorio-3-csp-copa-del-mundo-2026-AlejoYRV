@@ -58,10 +58,10 @@ class WorldCupCSP:
                 if self.is_valid_assignment(g, team, assignment)
             ]
 
+            new_domains[team] = valid_groups
+
             if len(valid_groups) == 0:
                 return False, new_domains
-
-            new_domains[team] = valid_groups
 
         return True, new_domains
 
