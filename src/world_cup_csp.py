@@ -110,7 +110,7 @@ class WorldCupCSP:
             new_domains[team] = valid_groups
 
         return True, new_domains
--
+        
     # Heurística MRV
 
     def select_unassigned_variable(self, assignment, domains):
